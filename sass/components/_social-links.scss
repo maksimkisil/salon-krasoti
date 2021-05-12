@@ -1,0 +1,35 @@
+.social-links-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links-icons__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-links-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  fill: var(--dark-text-color);
+  background-color: var(--secondary-text-color);
+  border-radius: 50%;
+
+  transition: fill 250ms linear;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text);
+  }
+}
+
+.social-links-icons__icon {
+  width: 20px;
+  height: 20px;
+}

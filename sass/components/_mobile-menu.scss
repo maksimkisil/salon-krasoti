@@ -1,0 +1,11 @@
+.burger-menu-icon {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+
+  fill: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

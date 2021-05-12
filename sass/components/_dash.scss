@@ -1,0 +1,23 @@
+.dash::before {
+  // display: inline-block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
+.dash_light::before {
+  @extend .dash::before;
+  background-color: var(--dash-dark);
+}
+
+.dash_dark::before {
+  @extend .dash::before;
+  background-color: var(--dark-text-color);
+}
+
+.dash_margin-right::before {
+  @extend .dash::before;
+  margin-right: 40px;
+  background-color: var(--dark-text-color);
+}

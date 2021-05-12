@@ -1,0 +1,54 @@
+.title {
+  margin-bottom: 33px;
+  @include font(700, 42px, 49px, 0.05em);
+  font-family: var(--secondary-font);
+
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 44px;
+  }
+}
+
+.title-about {
+  margin-bottom: 20px;
+
+  @include font(700, 28px, 33px, 0.05em);
+  font-family: var(--secondary-font);
+
+  color: var(--dark-text-color);
+
+  @media screen and (min-width: 1280px) {
+    @include font(700, 42px, 49px, 0.05em);
+  }
+}
+
+.title-advantages {
+  @extend .title;
+  margin-bottom: 20px;
+
+  color: var(--dark-text-color);
+}
+
+.title-masters {
+  @extend .title;
+  margin-bottom: 44px;
+
+  color: var(--dark-text-color);
+}
+
+.title-contacts-left-side {
+  margin-bottom: 44px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.title-contacts-right-side {
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}

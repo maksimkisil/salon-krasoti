@@ -1,0 +1,110 @@
+.price {
+  background-color: var(--price-bgc);
+  background-image: url(../images/mobile/price/img.png);
+  max-width: 480px;
+  margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/price/img@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/tablet/price/img.png);
+    max-width: 768px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/price/img@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/desktop/price/img.png);
+    max-width: 1280px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/price/img@2x.png');
+    }
+  }
+}
+
+.price-box {
+  margin-bottom: 50px;
+  padding: 30px 30px 10px;
+
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 40px 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.price-list {
+  width: 100%;
+  height: 100%;
+
+  @include font(400, 14px, 30px, 0.02em);
+
+  color: var(--middle-text-color);
+
+  @media screen and (max-width: 480px) {
+    @include font(400, 12px, 18px, 0.01em);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 18px, 30px, 0.02em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 30px 40px;
+  }
+}
+
+.price-list-left {
+  @media screen and (min-width: 1280px) {
+    &:nth-child(2n + 1) {
+      background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
+  }
+}
+
+.price-list-right {
+  @media screen and (min-width: 1280px) {
+    &:nth-child(2n) {
+      background-image: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      );
+    }
+  }
+}
+
+.price-list__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

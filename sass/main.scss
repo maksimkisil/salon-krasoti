@@ -1,0 +1,37 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+@import './components/components';
+@import './components/logo';
+@import './components/button';
+@import './components/title';
+@import './components/social-links';
+@import './components/social-list';
+@import './components/dash';
+@import './components/suptitle';
+@import './components/subtitle';
+@import './components/animation';
+
+@import './components/mobile-menu';
+@import './components/mobile-menu-form';
+
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/price';
+@import './layout/advantages';
+@import './layout/masters';
+@import './layout/gallery';
+@import './layout/contacts-left';
+@import './layout/contacts-right';
+@import './layout/footer';

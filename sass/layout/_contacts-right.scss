@@ -1,0 +1,128 @@
+.contacts-form-right {
+  // max-width: 480px;
+  height: 496px;
+  background-image: url(../images/mobile/contacts/img.png);
+  background-color: var(--contacts-bgc);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/contacts/img@2x.png');
+  }
+
+  // таблетка
+  @media screen and (min-width: 768px) {
+    // max-width: 768px;
+    height: 449px;
+
+    background-image: url(../images/tablet/contacts/img.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/contacts/img@2x.png');
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin: 0 auto;
+  }
+
+  // десктоп
+  @media screen and (min-width: 1280px) {
+    // max-width: 625px;
+    height: 644px;
+
+    // background-image: url(../images/desktop/contacts/img.png);
+
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: url('../images/desktop/contacts/img@2x.png');
+    // }
+  }
+}
+
+.contacts-right-side {
+  @media screen and (min-width: 1280px) {
+    margin-left: 45px;
+    margin-right: 200px;
+  }
+}
+
+.address-box {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    justify-content: baseline;
+  }
+}
+
+.address {
+  display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    margin-bottom: 70px;
+    width: 270px;
+  }
+}
+
+.contacts-list__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts-list__link {
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text);
+  }
+}
+
+.contacts-list__link,
+.contacts-list__time {
+  color: var(--middle-text-color);
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.contacts-list__icon {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+
+  fill: currentColor;
+}
+
+.contacts-list__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

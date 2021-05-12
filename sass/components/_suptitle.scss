@@ -1,0 +1,26 @@
+.suptitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @include font(600, 11px, 15px, 0.1em);
+  text-transform: uppercase;
+
+  &_light {
+    @extend .suptitle;
+    color: var(--suptitle-text-color);
+  }
+
+  &_dark {
+    @extend .suptitle;
+    color: var(--dark-text-color);
+  }
+
+  &_margin-bottom {
+    margin-bottom: 44px;
+  }
+
+  &_font {
+    @include font(600, 11px, 21px, 0.1em);
+  }
+}
